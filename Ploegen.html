@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ploegen</title>
+</head>
+<body>
+
+<script>
+    let naam = document.getElementById("naam").value;
+let shortcode = document.getElementById("shortcode").value;
+let beschrijving = document.getElementById("beschrijving").value;
+
+var para = document.createElement("div");
+var image = document.createElement("img");
+image.setAttribute("src", "landen/" + shortcode + ".png");
+image.classList.add("vlag")
+var label = document.createElement("label");
+label.innerHTML = naam;
+label.classList.add("naamLand");
+var label2 = document.createElement("label");
+label2.innerHTML = beschrijving;
+label2.classList.add("beschrijvingLand");
+</script>
+</body>
+</html>
